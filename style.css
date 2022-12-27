@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+#img1,#img2{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+}
+#img1{
+    top: -200px;
+    left: 10px;
+}
+#img2{
+    bottom: -200px;
+    right: 10px;
+    overflow: hidden;
+}
+.maincontainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+}
+.container{
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 10;
+}
+#box2 img{
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    bottom: 50px;
+    margin: auto;
+}
+#box2,#box3{
+    background-color: #ffffff;
+}
+#box2 .detail{
+    position: relative;
+    bottom: 25px;
+    width: 50%;
+    margin: auto;
+}
+#box2 .detail h5{
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 10px;
+    color: var(--clr);
+    font-weight: 700;
+}
+#box2 .detail p{
+    margin: auto;
+    width: 50%;
+    color: hsl(0, 0%, 59%);
+    font-weight: 4002;
+}
+#box3{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#box3 .count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#box3 h5{
+    margin: 5px;
+    font-weight: 700;
+    color:  hsl(229, 23%, 23%);
+}
+#box3 p{
+    font-weight: 400;
+    color: hsl(27, 10%, 46%);
+}
+hr{
+    background-color: azure;
+}
+@media (max-width:992px){
+#img1,#img2{
+    width: 450px;
+}
+}
+@media (max-width:576px){
+#img1,#img2{
+    width: 200px;
+}
+}
